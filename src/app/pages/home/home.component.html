@@ -1,29 +1,55 @@
 <div class="home-container">
+    <section class="hero-card">
+        <p class="kicker">Personal Site</p>
+        <h1>Gaetano Di Grazia</h1>
+        <h2>Backend Engineer focused on resilient systems and practical AI.</h2>
+        <p class="lead">
+            I design software that stays readable over time, handles real-world scale,
+            and turns data into usable products.
+        </p>
 
-<section class="hero">
-    <h1>Gaetano Di Grazia</h1>
-    <h2>Software Engineer | Backend Developer</h2>
-    <p>I build robust systems, APIs and machine learning tools with clean and scalable code.</p>
+        <div class="buttons">
+            <a href="assets/cv/CV_Gaetano_Di_Grazia.pdf" target="_blank" class="btn primary">Download CV</a>
+            <a href="https://github.com/gaetanodigrazia" target="_blank" class="btn ghost">GitHub</a>
+            <a href="https://www.linkedin.com/in/gaetanodigrazia" target="_blank" class="btn ghost">LinkedIn</a>
+        </div>
+    </section>
 
-    <div class="buttons">
-        <a href="assets/cv/CV_Gaetano_Di_Grazia.pdf" target="_blank" class="btn">📄 Download CV</a>
-        <a href="https://github.com/gaetanodigrazia" target="_blank" class="btn">💻 GitHub</a>
-        <a href="https://www.linkedin.com/in/gaetanodigrazia" target="_blank" class="btn">💼 LinkedIn</a>
-    </div>
-</section>
+    <section class="highlights-grid">
+        <article class="highlight">
+            <h3>Recent Articles</h3>
+            <ul>
+                <li><a routerLink="/articles">Predictive Modeling for Real Estate</a></li>
+                <li><a routerLink="/articles">Image-to-Image Translation: Overview</a></li>
+            </ul>
+            <a routerLink="/articles" class="card-link">Explore articles</a>
+        </article>
 
-<section class="intro-sections">
-    <h3>Recent Articles</h3>
-    <ul>
-        <li><a routerLink="/articles">Predictive Modeling for Real Estate</a></li>
-        <li><a routerLink="/articles">Image-To-Image Translation</a></li>
-    </ul>
-    <a routerLink="/articles" class="link">→ View all articles</a>
+        <article class="highlight">
+            <h3>Featured Projects</h3>
+            <ul>
+                <li><a routerLink="/projects">Residenz: Real Estate ML System</a></li>
+                <li><a routerLink="/projects">Kafka Event-Driven Architecture Demo</a></li>
+            </ul>
+            <a routerLink="/projects" class="card-link">Open portfolio</a>
+        </article>
+    </section>
 
-    <h3>Featured Projects</h3>
-    <ul>
-        <li><a routerLink="/projects">Residenz - ML for Real Estate</a></li>
-    </ul>
-    <a routerLink="/projects" class="link">→ View portfolio</a>
-</section>
+    <section class="journey">
+        <h3>Current Focus</h3>
+        <div class="timeline">
+            <div>
+                <strong>Backend engineering in healthcare</strong>
+                <p>Java 21, Spring Boot 3, Kafka, and FHIR standards for robust integrations.</p>
+            </div>
+            <div>
+                <strong>Machine learning applications</strong>
+                <p>Building production-ready workflows for predictive models and APIs.</p>
+            </div>
+            <div>
+                <strong>Software architecture</strong>
+                <p>Clean boundaries, event-driven workflows, and maintainable delivery pipelines.</p>
+            </div>
+        </div>
+    </section>
 </div>

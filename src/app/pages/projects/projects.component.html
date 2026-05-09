@@ -1,5 +1,6 @@
 <div class="projects-container">
-  <h2 class="heading">💻 Projects</h2>
+  <h2 class="heading">Selected Projects</h2>
+  <p class="subheading">A curated set of systems and prototypes focused on production quality and measurable impact.</p>
 
   <div class="card-grid">
     <div class="card" *ngFor="let project of projects">
@@ -9,8 +10,9 @@
         <p class="tech-stack">Tech: {{ project.techStack.join(', ') }}</p>
         <p class="date">{{ project.date }}</p>
         <div class="links">
-          <a *ngIf="project.githubUrl" [href]="project.githubUrl" target="_blank" class="btn">GitHub</a>
-          <a *ngIf="project.liveDemoUrl" [href]="project.liveDemoUrl" target="_blank" class="btn btn-secondary">Live Demo</a>
+          <a *ngIf="project.githubUrl" [href]="project.githubUrl" target="_blank" class="btn">Source code</a>
+          <a *ngIf="project.liveDemoUrl" [href]="project.liveDemoUrl" target="_blank" class="btn btn-secondary">Live
+            demo</a>
         </div>
       </div>
     </div>

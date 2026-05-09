@@ -1,5 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap");
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+:root {
+  --bg-100: #eef2ea;
+  --bg-200: #dde6d6;
+  --surface: #f8faf5;
+  --surface-strong: #ffffff;
+  --text-900: #14231a;
+  --text-700: #2f4937;
+  --text-500: #5f7867;
+  --line: #c8d6c3;
+  --accent: #bb4d20;
+  --accent-strong: #8e3513;
+  --accent-soft: #f4d8c9;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --shadow-soft: 0 14px 38px rgba(24, 45, 33, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--text-900);
+  background:
+    radial-gradient(circle at 2% 2%, rgba(187, 77, 32, 0.18), transparent 22%),
+    radial-gradient(circle at 98% 12%, rgba(83, 116, 91, 0.2), transparent 24%),
+    linear-gradient(155deg, var(--bg-100), var(--bg-200));
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", Georgia, serif;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
 }
