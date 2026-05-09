@@ -152,6 +152,83 @@
   }
 }
 
+.profile-details {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.35fr 1fr;
+
+  .detail-card {
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(169, 189, 168, 0.45);
+    border-radius: 14px;
+    padding: 1rem;
+
+    h3 {
+      margin: 0 0 0.8rem;
+      font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+    }
+  }
+
+  .tag-groups {
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .group {
+    h4 {
+      margin: 0 0 0.45rem;
+      font-size: 0.98rem;
+      color: var(--text-700);
+    }
+  }
+
+  .tag-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+
+    li {
+      padding: 0.26rem 0.62rem;
+      border-radius: 999px;
+      border: 1px solid rgba(169, 189, 168, 0.65);
+      background: rgba(255, 255, 255, 0.8);
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--text-700);
+    }
+  }
+
+  .cert-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.7rem;
+
+    li {
+      border-radius: 12px;
+      border: 1px dashed rgba(169, 189, 168, 0.75);
+      padding: 0.8rem;
+      background: rgba(248, 250, 245, 0.85);
+    }
+
+    h4 {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--text-900);
+    }
+
+    p {
+      margin: 0.35rem 0 0;
+      color: var(--text-500);
+      font-size: 0.92rem;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .home-container {
     gap: 1rem;
@@ -159,6 +236,10 @@
 
   .hero-card {
     padding: 1.2rem;
+  }
+
+  .profile-details {
+    grid-template-columns: 1fr;
   }
 }
 
